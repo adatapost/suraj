@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Title of the window</title>
+		<style>
+			html{ background: red;}
+			body { background:blue;
+			 font-size:400%;
+			}
+			h1{background:yellow;}
+		</style>
+	</head>
+	<body>
+		<h1>Hello World</h1>
+		<img src="hello.gif" alt=""/>
+	</body>
+</html>

@@ -1,0 +1,99 @@
+Configure Alias/Context with Apatana (Eclipse) studio.
+=======================================================
+
+1. Create alias (x:\wamp\www\suraj)
+2. Open Apatana + Set workspace to "x:\wamp\www\suraj" + OK
+   
+   [To set editor font - Windows + Preferences + ...]
+
+   [To show/hide Views (Panes) - Windows + Views + ...]
+
+HTML
+==================================================================
+
+HTML is a standard to present content/data on the web. The World Wide Web Consortium (W3C), an open standard orgranization define standards for web including SGML, HTML, XML, CSS and so on.
+
+SGML (Standard Generalize Markup Language) is the base markup language. Its use is general purpose (You can design webpage, design data-structure, design math formulas, design graphics and many more) so W3C has define two standards which are derived from SGML and these two standards are called HTML and XML.
+
+  HTML - is to present data on web.
+  XML  - is to describe data for any one. XML (Extensible Markup          Language) is also known as data-format & data-exchange          protocol.
+
+Web-browser and HTML?
+ 
+  Web-browser implements HTMLs and other standards including XML,   JavaScript, CSS. Different web-browser vendors have different   implementations of these "Standards" so we must have to understand
+  these differences theoritically & practically.
+
+  What other tools & services a browsers have?
+  -------------------------
+  Web-browser is the complex software in your system and it is   constituted using number of tools & standards:
+  
+     Web-browser has:
+          1. HTML parsers (Different parsers for different standards).
+          2. XML Parsers 
+             Parser is a program that is responbile to verify each and              every HTML element in a web-page and convert HTML tag into              HTML Object.
+          3. JavaScript Engine
+          4. CSS Modules
+          5. Graphics Engine -- It draw text, graphics, images, videos
+              etc.
+          6. Plug-in and add-ons execution environment.
+  
+
+Why we have to use <!doctype html>?
+========================================
+At the top of web-doc, we must have to <!doctype html> because that way we can tell the web-browser to use "latest" and "stable" parser to create HTML objects.
+
+If <!doctype html> is missing then web-browser will surprize you and web-browser will be running in "Quirk Mode".
+
+if <!doctype html> is present then the running mode of browser is called "Standard Mode" and it manages lots of things on behalf of the page author.
+
+ For example,
+
+ <!doctype html>
+
+ <title>This is well-formed and valid document</title>
+
+ <h1>This is valid doc</h1>
+
+Web-browser wont complaint about head, html and body tags.
+
+
+For better understanding on HTML objects, layouts, default properties and behavior always use "Developer Tool". The Developer Tool is a software available with your (any) web-browser.
+
+
+<head> -- What is the purpose of this tag?
+==========================================
+
+  <head> tag and its children are used to instruct the web-browser and
+  search engine (crawler software .e.g google search, yahoo search   etc).
+  
+  Inside the <head>:
+
+    1. <meta charset="utf-8"/> -- This tag instruct the web-browser         that this document has ability to represent English and non-            English text.
+       
+        <head>
+            <meta charset="utf-8"/>
+            <title>This is mixed title - &#2310;&#2360;</title>
+        </head>
+
+    2. <meta name="" content=""/> -- Used to describe the web-document.
+        It describes the name of author, country it belongs, purpose
+         of page and search keywords for search engine.
+
+    3.  <meta/> is also used to set "favicon" -- icon appear when you          bookmark a page and also at addressbar.
+
+    4.  <meta/> instructs web-browser about MIME content-type, cache-         controls.
+
+    5.  For prograssive CSS, you can add <link/> tag inside the head             tag. 
+
+    6.  Some people(developer) also uses <head> area for JavaScript         <script> block. But we should have to avoid <script> code under
+        the <head>.
+
+        Add script code at bottom of document so web-browser can render         HTML & CSS content without blocked by JavaScript code.
+
+
+
+
+
+ 
+
+ 
