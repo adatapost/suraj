@@ -1,0 +1,100 @@
+The Web Platform (Framework)
+=========================================================
+
+ What is a "Framework"?
+
+   It is specifically a programming environment. This env acts as "IoC"    behavior (Hollywood principle - Dont call us, we will call you) so
+   developer can design his/her application as per platform's norms.
+
+ Under the web-platform, we will have to understand and use other sub- frameworks including - client-framework, server-framework and so on.
+
+
+ Client frameworks:
+
+     1. Web-browser (Html, CSS, JavaScript)
+     2. Dekstop Or Windows API (Application Programmin Interface)
+
+
+ Server Frameworks:
+
+     1. PHP, .NET, Java, Ruby, Python etc
+     2. HTTP Servers
+     3. Database servers and so on.
+  
+
+
+Web Resources
+====================================================
+
+  It is the most important unit of web-application. The web-resource   can be a "static" or "dynamic".
+
+  Static Resource : A resource whose content cannot be changed   automatically unless his/her author change it. These resources are  .html, .js, .css, images, video, audio etc files.
+
+
+  Dynamic Resource : A resource that produce or generate dynamic content of HTML/CSS/JavaScript and data is known as "dynamic" resource.
+  These resources are always "programs" written in Java,C#, PHP, Ruby,   Python, C/C++ etc languages.
+
+ In short, our webapplication (Or our project) is made up of number of  static and dynamic resources.
+
+
+What softwares are needed to develop and deploy the webapplication?
+================================================================
+
+ In order to develop & deploy PHP web app we must have to install following softwares:
+
+   1. HTTP Or Web Server 
+   2. Application Server (PHP)
+   3. And optionally -- database server
+
+
+Web/HTTP Server
+----------------
+
+    It receives request from web-browser (client) for a resource. It returns error-page is the requested resource is not resolve.
+
+    It returns copy of requested resource to the web-browser if that     requested resource is "Static Resource".
+
+    It forwards requested resource to application servr (PHP) if that     requested resource is "dynamic resource".
+
+
+    By default web-server listen to the PORT 80 and ofcourse we can     have different ports too.
+
+    
+   The application server process the "dynamic resource", produce output and send produced output to the web-server so web-server forward this output to the web-browser.
+
+  Client    Request for resource
+  (Browser) =========================>  WebServer (Apache)
+                                          
+           <===========================    ||     /\
+               Response                    ||     ||     
+                                           \/     ||
+                                        Application Server (PHP)
+                                              ||
+                                              ||
+                                             Databases
+
+
+Where to find "HTTP Server, PHP, MySql"?
+-----------------------------------------------
+
+   In fact, Apache, PHP and MySql are open source projects and we need    their build versions or we need to build source code on our own.
+
+   Two bundles exists that consists pre-compiled (build) and pre-   configured Apache, MySql and PHP.
+
+   These bundle are for Linux (LAMP) and
+                    for Windows (WAMP) operating systems.
+   [Note: XAMPP bundle is configured for any OS]
+
+   X - For any OS           W - Window OS      L - Linux
+   A - for Apache           A  - Apache        A - Apache
+   M - MySql                M - MySql          M - Mysql
+   P - PHP                  P - PHP            P - PHP
+   P - Perl
+
+   We just need to download 32 or 64 bits build.
+   
+
+   
+
+
+

@@ -1,0 +1,58 @@
+About WAMP tool
+===============
+
+ WAMP tool will be installed x:\wamp and under this folder we've "Bin" directory that contains Apache, PHP and Mysql softwares.
+
+ 1. x:\wamp\bin\apache\apache.x.x.x - This folder is called "Home" of
+    web-server.
+ 
+    Inside the HOME, we've:
+               1. bin folder that contains commands & executables to
+                  manage the web-server. (ie.start, stop etc).
+               2. conf folder contains web-server configuration files.
+                  The "httpd.conf" is main configuration file that                   includes web-server settings including name of server, port number, DocumentRoot, Directory permission, file permission and many more.
+
+                
+2. x:\wamp\bin\php\php.x.x.x - PHP installation (HOME) directory          contains php.exe, php.ini, core and extension library.
+               1. php.ini - is PHP development environment                   configuration file.
+                  Common configurations are - Loading extensions,
+                  controls buffer (memory) for page execution and
+                  upload, set error logging attributes and so on.
+               2. ext folder contains extension libraries (.dll).
+
+3. x:\wamp\bin\mysql\mysql.x.x.x MySql Home contains:
+
+                1. Bin directory to start/stop MySql Server database
+                2. Data directory contains "mysql" databases.
+
+ 
+The configurations files in apache, mysql and PHP contains default settings and we can change whenever it is required/needed.
+
+
+Use WAMP-shortcut-icon to start/stop servers and also configure them.
+
+
+               
+Context or Virtual Directory or Alias
+==================================================================
+
+It is file system folder that is linked or glued to apache-webserver and PHP development environment and it contains "resources" which are serve via HTTP protocol.
+
+Bydefault x:\wamp\www folder is the location in which we can create virtual directories or aliases. However if you wish to create an alias outside the x:\wamp\www then add configuration section into httpd.conf file.
+   for example:
+
+          Alias /hello  "c:/pqr"
+
+ So http://localhost  is called "servername" or "domain name"
+
+    http://localhost/  <--- is "/" is called root or main alias.
+
+    http://localhost/test/ <----- "/test is sub-alias
+
+
+ 127.0.0.1 - loopback IP of current machine (self IP).
+ Or
+ localhost
+ 
+
+
