@@ -1,0 +1,15 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Html</title>
+		<link rel="stylesheet" href="styles/fonts.css"/>
+	</head>
+	<body>
+		<h1>About font family</h1>
+		<h2>About font size</h2>
+		<p>and about font style</p>
+	</body>
+	
+</html>

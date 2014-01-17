@@ -1,0 +1,58 @@
+html, body, div, h1,h2,h3,h4,h5,h6, form, table,ol, li, ul {
+	margin:0px;
+}
+html {
+	
+}
+body {
+	
+}
+#wrapper {
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+
+#header {
+	
+}
+#nav {
+	background:#dd3344;
+	color:#fff;
+	padding:4px;
+}
+#nav ul {
+	list-style: none;
+	padding:0px;
+}
+#nav ul > li {
+	display:inline-block;
+	padding:4px;
+}
+
+#nav a {
+	color:white;
+	text-decoration:none;
+}
+
+#nav a:hover {
+	background:red;
+}
+#content {
+	
+}
+#footer {
+	
+}
+
+.float-left {
+	float:left;
+}
+.float-right {
+	float:right;
+}
+.clear { 
+  clear:both;	
+}

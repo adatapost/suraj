@@ -1,0 +1,41 @@
+html, body, div, form, h1,h2,h3,h4,h5,h5{
+	margin:0px;
+}
+body {
+	line-height:1.5em;	
+}
+#main{
+	width:999px;
+	margin-left:auto;
+	margin-right:auto;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+#header {
+	height:100px;
+}
+
+#header h1{
+	padding:20px;
+	font-size:4em;
+	font-weight: 900;
+	text-shadow:5px 5px 5px #eee;
+}
+#footer {
+	background:black;
+	color:white;
+}
+#footer p{
+	line-height:200%;
+}
+#nav{
+	padding:10px;
+	background:black;
+}
+#nav a{
+	color:white;
+}
+
+#content {
+	min-height:300px;
+}

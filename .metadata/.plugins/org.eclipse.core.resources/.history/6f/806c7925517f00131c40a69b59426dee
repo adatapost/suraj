@@ -1,0 +1,13 @@
+body {
+	background: url(back-line.png);
+}
+
+p {
+	background: url(images/star-revert.png)  repeat-y;
+	padding-left:120px;
+}
+
+.box {
+	width:300px;
+	height:200px;
+}

@@ -1,0 +1,32 @@
+body {
+	background: url(back-line.png);
+}
+
+p {
+	background: url(images/star-revert.png)  repeat-y;
+	padding-left:120px;
+}
+
+.box {
+	width:300px;
+	height:200px;
+	border:1px solid black;
+	
+	background: url(images/star-revert.png) no-repeat left top,
+	            url(images/star-revert.png) no-repeat center center
+	            ;
+}
+
+
+.penguins {
+	width:100px;
+	height:80px;
+	border:1px solid #aaa;
+	border-radius:20px;
+	background: url(images/penguins.jpg) no-repeat -170px -70px;
+}
+
+.logo {
+	width:100px;
+	height:100px;
+}

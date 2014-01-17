@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="23" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="844" maximized="true" width="1200" x="74" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -17,7 +17,10 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="111" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.aptana.editor.html" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.php" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.css" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="com.aptana.editor.html" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -26,21 +29,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.aptana.editor.html" name="first.html" partName="first.html" path="C:/wamp/www/Suraj/html/first.html" title="first.html" tooltip="html/first.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/html/first.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="353" selectionTopPixel="0"/>
-</editor>
-<editor id="com.aptana.editor.html" name="test.html" partName="test.html" path="C:/wamp/www/Suraj/html/test.html" title="test.html" tooltip="html/test.html" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/html/test.html"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1088" selectionTopPixel="953"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -56,6 +48,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors (1 item)"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="150" org.eclipse.ui.ide.markerType="150" org.eclipse.ui.ide.pathField="200" org.eclipse.ui.ide.resourceField="150" org.eclipse.ui.ide.severityAndDescriptionField="500"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -68,10 +63,29 @@
 <viewState/>
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="html">
+<viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="site1">
 <project name="html">
+<expanded>
+<element path="/html/css"/>
+</expanded>
 <selection>
-<element path="/html/test.html"/>
+<element path="/html/css"/>
+</selection>
+</project>
+<project name="html1">
+<expanded>
+<element path="/html1/styles"/>
+</expanded>
+<selection>
+<element path="/html1/float.html"/>
+</selection>
+</project>
+<project name="site1">
+<expanded>
+<element path="/site1/css"/>
+</expanded>
+<selection>
+<element path="/site1/css/sample.php"/>
 </selection>
 </project>
 </viewState>
@@ -80,7 +94,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.aptana.editor.html" activePerspective="com.aptana.ui.WebPerspective">
+<perspectives activePart="com.aptana.explorer.view" activePerspective="com.aptana.ui.WebPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.aptana.ui.internal.WebPerspectiveFactory" id="com.aptana.ui.WebPerspective" label="Web"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -150,7 +164,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.22026432" ratioLeft="350" ratioRight="1239" relationship="2" relative="left"/>
-<info folder="true" part="terminalArea" ratio="0.7422096" ratioLeft="524" ratioRight="182" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="terminalArea" ratio="0.6671388" ratioLeft="471" ratioRight="235" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="com.aptana.terminal.views.terminal:143760b1a8b" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -182,58 +196,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/html/first.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/html/second.html"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" path="/html/test.html"/>
-</editors>
-<item historyLabel="first.html" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="second.html" index="1">
-<position info="not_deleted" x="29" y="0"/>
-</item>
-<item historyLabel="first.html" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="first.html" index="0">
-<position info="not_deleted" x="372" y="0"/>
-</item>
-<item historyLabel="first.html" index="0">
-<position info="not_deleted" x="15" y="0"/>
-</item>
-<item historyLabel="test.html" index="2">
-<position info="not_deleted" x="154" y="0"/>
-</item>
-<item historyLabel="first.html" index="0">
-<position/>
-</item>
-<item historyLabel="test.html" index="2">
-<position info="not_deleted" x="351" y="0"/>
-</item>
-<item historyLabel="first.html" index="0">
-<position info="not_deleted" x="269" y="0"/>
-</item>
-<item historyLabel="first.html" index="0">
-<position info="not_deleted" x="203" y="0"/>
-</item>
-<item historyLabel="test.html" index="2">
-<position info="not_deleted" x="1088" y="0"/>
-</item>
-<item historyLabel="first.html" index="0">
-<position/>
-</item>
-<item historyLabel="first.html" index="0">
-<position/>
-</item>
-<item historyLabel="first.html" index="0">
-<position/>
-</item>
-<item active="true" historyLabel="first.html" index="0">
-<position/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -250,11 +213,50 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="sample.php" tooltip="site1/css/sample.php">
+<persistable path="/site1/css/sample.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" name="style.css" tooltip="site1/css/style.css">
+<persistable path="/site1/css/style.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.php" name="index.php" tooltip="site1/index.php">
+<persistable path="/site1/index.php"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="login.html" tooltip="site1/login.html">
+<persistable path="/site1/login.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="float.html" tooltip="html1/float.html">
+<persistable path="/html1/float.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="fonts.html" tooltip="html1/fonts.html">
+<persistable path="/html1/fonts.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" name="float.css" tooltip="html1/styles/float.css">
+<persistable path="/html1/styles/float.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="background.html" tooltip="html1/background.html">
+<persistable path="/html1/background.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" name="background.css" tooltip="html1/styles/background.css">
+<persistable path="/html1/styles/background.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" name="border.css" tooltip="html1/styles/border.css">
+<persistable path="/html1/styles/border.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="border.html" tooltip="html1/border.html">
+<persistable path="/html1/border.html"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="test.html" tooltip="html/test.html">
 <persistable path="/html/test.html"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="first.html" tooltip="html/first.html">
 <persistable path="/html/first.html"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.css" name="style.css" tooltip="html/css/style.css">
+<persistable path="/html/css/style.css"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.aptana.editor.html" name="sample.html" tooltip="html/sample.html">
+<persistable path="/html/sample.html"/>
 </file>
 </mruList>
 </workbench>

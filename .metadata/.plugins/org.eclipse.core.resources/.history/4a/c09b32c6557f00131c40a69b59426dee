@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Html</title>
+		<link rel="stylesheet" href="styles/float.css"/>
+	</head>
+	<body>
+		 <div>
+		 	 <div class="float-left">A</div>
+		 	 <div class="float-right">B</div>
+		 	 <div class="float-left">C</div>
+		 	 <div class="clear"></div>
+		 </div>
+		 <div>
+		 	This is the sample content
+		 </div>
+	</body>
+</html>
+

@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Html</title>
+		<link rel="stylesheet" href="styles/border.css"/>
+	</head>
+	<body>
+		
+		 <a href="#">Hello</a>
+		 <p>One</p>
+		 <p>Two</p>
+		<div class="my-box">
+			<p>
+			This is the box and some ext ere It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+</p>
+	<p>		Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc).
+			It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+		</p>
+			<img src="styles/4.jpg" alt="Photo galary"/>
+			Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc).
+			It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+
+			Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc).
+			It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+
+			Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc).
+
+		</div>
+		<div class="java-code">
+			import java.io.*;
+
+			public <code>class</code> Student {
+			    int no;
+			    public void printIt() {
+                    System.out.println("Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc).
+			It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font");
+			    }
+			}
+
+		</div>
+		
+		<table>
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+  <div class="test">
+  	<p>A</p>
+  	<p>B</p>
+  	<p>C</p>
+  	<p>D</p>
+  	<p>E</p>
+  </div>
+</html>

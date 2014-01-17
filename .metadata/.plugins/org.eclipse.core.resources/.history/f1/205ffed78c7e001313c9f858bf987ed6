@@ -1,0 +1,13 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Html</title>
+		<link rel="stylesheet" href="styles/border.css"/>
+	</head>
+	<body>
+		 <div class="my-box">One</div>
+	</body>
+	
+</html>

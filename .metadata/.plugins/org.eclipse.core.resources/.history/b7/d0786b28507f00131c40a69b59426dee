@@ -1,0 +1,8 @@
+body {
+	background: url(back-line.png);
+}
+
+p {
+	background: url(images/star-light.png) no-repeat;
+	padding-left:80px;
+}

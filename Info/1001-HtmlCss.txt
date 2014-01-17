@@ -1,0 +1,190 @@
+Two main groups of HTML elements (Tags)
+=======================================
+
+  1. Inline elements and
+  2. Block elements
+
+ Inline element's width and height is detemine by its content and we  cannot change height/width explictly. 
+    Example are: span, label, code, strong, em, i,u,b,kbd, abbr etc.
+
+ Block element's width is determined by its parent. We can change  height/width of block elements.
+
+     Example: html,body, form,div, header, footer, nav, section,
+              article, p, table and so on.
+
+ There are some elements have combine features --inline and block and  these elements are called inline-block.
+
+    Example are: <input ../>, texarea, select etc
+
+CSS
+=====
+
+ What is Cascade StyleSheet?
+
+    It is an instruction for browser to render an element.
+
+    CSS resource can be static or dynamic.
+
+    CSS attributes are defined by the "SELECTORS".
+
+Types of CSS Selectors
+=======================
+1. * - Universal selector 
+  
+* {
+  border:1px solid red;
+
+}
+
+  set border for all elements.
+
+2. tag selector -- tagName/elementName is used to define style    attributes: 
+
+body {
+ ....
+}
+
+3. class selector -- User-defined name begins with period (.)
+
+.mybox {
+   ....
+}
+
+tagName.blue {
+ ....
+}
+
+4. id selector -- User-defined name begins with # (hash).
+
+#message { ...}
+
+5. selector1, selector2, selector3,.... {} -- Common style attributes             for multiple selectors.
+
+html,body,form,div, .test, #message, .my-box {
+   margin:0px;
+}
+
+6. selector1 selector { } -- Immediate child selector
+7. selector1 + selector2 {} -- sibling selector
+8. selector1 > selector2 {} --- descendent (children).
+9. selector1:pseudo_selector {} -- CSS Pseudo selectors
+10. tagName[attribute=value] {} -- Attribute selectors
+
+
+Where to write CSS selectors?
+================================
+
+Three possible locations are there:
+
+  1. inline style -- Do not use inlie style
+
+      e.g <p style="color:red; background:gray">...</p>
+
+   2. embeded selector - Do not use embeded selector
+     
+     e.g. 
+         <style>
+              body {}
+              .test {}
+          </style>
+    3. CSS Selector Resource -- Always use CSS resource (static or        dynamic).
+
+          This way we can re-use selectors across the web-site.
+  
+        You need to create a .css file under the root of your app and
+        glue it using <link/> element.
+
+
+Example
+========
+
+/webapp/
+       |
+       |--/css/
+              style.css  <--- static resource
+       |
+       | sample.html
+
+sample.html
+-----------
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8"/>
+      <title>CSS Practice</title>
+      <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+     <div id="main">
+          <div id="header">
+              <h1>SiteTitle</h1>
+          </div>
+          <div id="nav">
+               <a href="#">Home</a> 
+               <a href="#">About us</a>
+          </div>
+          <div id="content">
+               Content here....
+          </div>
+          <div id="footer">
+               &copy; SiteName - 2014
+          </div>
+     </div>
+   </body>
+ </html>
+    
+      
+style.css
+===========
+html, body, div, form, h1,h2,h3,h4,h5,h5{
+	margin:0px;
+}
+body {
+	line-height:1.5em;	
+}
+#main{
+	width:999px;
+	margin-left:auto;
+	margin-right:auto;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+#header {
+	height:100px;
+}
+
+#header h1{
+	padding:20px;
+	font-size:4em;
+	font-weight: 900;
+	text-shadow:5px 5px 5px #eee;
+}
+#footer {
+	background:black;
+	color:white;
+}
+
+#footer p{
+	line-height:200%;
+}
+#nav{
+	padding:10px;
+	background:black;
+}
+#nav a{
+	color:white;
+}
+
+#content {
+	min-height:300px;
+}
+
+
+ 
+ 
+
+
+ 
+
+ 
+    

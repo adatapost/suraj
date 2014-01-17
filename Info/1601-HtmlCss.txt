@@ -1,0 +1,162 @@
+CSS attributes
+===============
+
+text/font attributes
+=====================
+
+1. font-family: family_name;
+
+   Set font name or font family name. Following are standard font    families:  serif, sans-serif, fantacy, cursive etc.
+
+   Best practice :
+
+    font-family: "font1" "font2" "family-name";
+
+               font-family must appear at right of the list.
+
+
+2. font-size: n;   Never use "fixed" measurement units - pt, cm, in etc
+
+                   Always use "%" or "em".
+
+     
+To embed the font 
+=================
+
+  It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+
+  Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc). 
+
+ @font-face {} CSS selector will be used to create a new "font" or "font-family".
+
+General Syntax:
+ ===============
+
+@font-face {
+    font-family: 'NewName';
+    src: url('font_file.ext');
+} 
+
+body {
+
+  font-family: 'NewName';
+}
+
+[Note: font-file.ext file must be copied under the folder where style.css exists].
+
+
+4. font-weight: 100_to_900; To set font weight (lighter to bold)
+
+5. font-style: normal | italic;
+
+6. font-variant: small-caps | normal;
+
+7. text-align: left | right | center | justify
+
+8. text-decoration: none | underline | overline;
+
+9. line-height: n; Set spaces between two lines of text
+
+                   Always use em or % relative measurement units.
+
+10. text-transform: uppercase | lowercase | none
+
+
+Outline and border
+===========================
+
+1. border:width style color;
+
+   border:1px solid red;
+
+   Use dotted, dashed, ridge, outset, inset style constants.
+
+   color value can be constant or hexadecimal value
+
+
+2. Use short-hand border-* properties to render a border at specific     edge: border-left, border-top, border-bottom, border-top.
+
+        border-left:1px solid red;
+
+3. border-radius: leftTop rightTop bottomRight bottomLeft; To add                   radius to rectangle region.
+
+     border-radius:10px 0px 10px 0px;
+
+     border-radius:5px; /* for all four angles */
+
+4. box-shadow: x y blur color;
+ 
+     Draw box-shadow at x, y with color.
+
+     box-shadow: 4px 4px 4px #aaa;
+
+5. text-shadow: x y blur bolor;
+
+      Add shadow to text.
+
+6. overflow: auto | none | scroll;
+
+       It adds scroll (hor/ver) when text area is clipped (set height        and width).
+
+
+7. white-space: none | pre | pre-line | pre-wrap;
+
+    By default, web-browse ignore whitespace (new line, tab, spaces     etc).    This way you can preserve the whitespaces.
+
+
+Tranform inline to block and vice-versa
+===========================================
+
+  display: none | inline | block | inline-block;
+
+  display: none will hide elements.
+
+Pseudo CSS Selectors
+===============================================
+These standard selectors can be used with any user-defined selectors to add style attributes.
+
+Syntax:
+
+ selector : pseudo_selector { }
+
+
+1. a:link { color:red;}  -- Set link color
+2. a:visited { color:green;} -- set text color green for visited links
+3. a:active { } -- set attribute for active links
+4. selector:hover {} -- set attributes when mouse is entered into    selector's region.
+
+p:hover {
+  color:red;
+}
+
+a:hover {
+  text-transform: uppercase;
+}
+
+5. :first-letter {} - set style for first letter
+
+6. :nth-child(odd | even | number) set attributes for odd, even or nth    child.
+
+7. :first-line {} -- attributes for first line.
+
+8. ::selection {} --- set attributes when text region is selected.
+
+  ::selection {
+       background:red;
+       color:white;
+   }
+
+9. cursor: none | hand | ....; To set cursor icon.
+
+    cursor : url(icon_file.cur | .ico);
+
+10.  letter-spacing: n;  spacing between two chars.
+
+11.  word-spacing: n; spacing between two words.
+
+     
+
+
+
+
+      

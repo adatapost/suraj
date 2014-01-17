@@ -1,0 +1,85 @@
+html, body {
+	margin:0px;
+}
+
+a:hover {
+	background:red;
+}
+p:first-letter {
+	font-size:3em;
+}
+p:first-line{
+	color:red;
+}
+.my-box {
+	border:11px solid black;
+	width:400px;
+	height:200px;
+	border-radius:110px 110px 110px 110px;
+	padding:30px;
+	box-shadow:6px 6px 5px #aaa;
+	line-height: 1.5em;
+	overflow:  scroll;
+ 
+}
+
+.java-code {
+	white-space: pre-wrap;
+     letter-spacing: 10px;
+     
+}
+.java-code code {
+	color:blue;
+}
+
+a:link{
+	color:red;
+}
+a:active{
+	color:green;
+}
+a:visited {
+   color:black;	
+}
+
+
+
+table > thead {
+	background:black;
+	color:white;
+}
+
+table > tbody tr:nth-child(odd) {
+	background:#aaa;
+ 
+}
+table > tbody tr:nth-child(even) {
+	background:#eee;
+ 
+}
+table > tbody tr:nth-child(1) {
+	background:red;
+ 
+}
+
+.test {}
+.test > h1:nth-child(even) {
+	color:blue;
+	cursor:pointer;
+	display:none;
+}
+
+.test > h1:nth-child(odd) {
+	color:blue;
+	cursor:pointer;
+}
+
+.test >  h1:nth-child(odd):hover + h1   {
+	 color:green;
+	 display:block;
+}
+
+::selection{
+	background:red;
+	color:white;
+}

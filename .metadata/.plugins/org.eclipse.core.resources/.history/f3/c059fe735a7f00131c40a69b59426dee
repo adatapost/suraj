@@ -1,0 +1,8 @@
+<?php
+//header("content-type: text/css");
+$no = 0;
+if($no)
+  echo "body {background:blue;}";
+else
+	echo "body {background:green;}";
+?>

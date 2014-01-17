@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Html</title>
+		<link rel="stylesheet" href="styles/border.css"/>
+	</head>
+	<body>
+		 <div class="my-box">
+		 	This is the box and some ext ere It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+
+  Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc). 
+ It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+   <img src="styles/4.jpg" alt="image"/>
+  Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc). 
+ It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+
+  Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc). 
+ It is possible in web-pages to use different fonts which will be first copied at client machine before web-browser render the text. This kind of mechanism is called "embed font".
+
+  Open source  fonts or open format fonts can be used without font   licence. (.woff, ttf, otf etc). 
+
+		 	
+		 </div>
+	</body>
+	
+</html>
